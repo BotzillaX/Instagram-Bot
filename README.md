@@ -25,9 +25,7 @@ Browser: Opera.
 
 Instagram accessed through Opera's sidebar.
 
-Keep all the files which you need to download in the same path/folder
-
-
+After downloading each file from the provided download links, make sure to place them all in the same directory as they are organized in the corresponding GitHub repository. This will help maintain the intended structure and organization of the files.
 
 
 
