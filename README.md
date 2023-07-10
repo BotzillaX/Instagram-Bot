@@ -15,6 +15,7 @@ Display Resolution: 2560x1440
 Scale: 150%
 Browser: Opera
 Instagram accessed through Opera's sidebar
+Keep all the files which you need to download in the same path/folder
 
 You wanna see a video/showcase of it?
 Check out: https://www.dropbox.com/sh/eerntwohbup9kb3/AADMsjiiQBXBYopVy95ywldTa?dl=0
