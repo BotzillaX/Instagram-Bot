@@ -9,7 +9,9 @@ I only develop features upon request, and the best part is that it will be compl
 
 Why haven't I included these features yet? I initially created this script out of boredom but then got involved in a larger project, which required me to halt the development of this bot.
 
+################
 
+################
 
 
 
@@ -24,10 +26,10 @@ Browser: Opera.
 Instagram accessed through Opera's sidebar.
 
 Keep all the files which you need to download in the same path/folder
+####################
 
 
-
-
+####################
 
 
 
