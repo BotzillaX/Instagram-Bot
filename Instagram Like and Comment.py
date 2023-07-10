@@ -12,21 +12,18 @@ import os
 
 
 #limitations  #Begrenzungen
-
+############################
 HowManyLikes = 80 #how many picturesand comments
 HowManyComments = 80 #how many picturesand comments
 
-
-
+############################
 float_random = random.uniform(4.3452,  7.4353) #time between every like and comment between a and b (11 to 22 seconds)
 
-
-
-
-
-float_random_more_capa = random.uniform(0.57335,  2.46773) #for better safety #don't do more than 2.5 seconds
-
-
+############################
+commentPicture = ("good work", "do another", "i gotcha :D", "nice", "pretty cool", "you deserve more likes", "creative", "do more, that's good", "ain't lyin but thats good", "like your content", ":D", "Excellent", "Love these. Well done.", "So nice", "So beautiful", "Adorable", "Beautiful", "Amazing job!", "You're so talented", "Keep up the great work", "I'm impressed", "This made my day", "You have a gift", "You're a genius", "This is so inspiring", "Absolutely stunning", "You nailed it", "You've got skills", "This is so entertaining", "Brilliant piece of work", "Wow, just wow", "This is fantastic", "Very impressive", "You have outdone yourself", "This is so creative", "Absolutely loved it", "I'm speechless", "This deserves more views", "You're a true artist", "I can't stop watching this", "This is so well done", "This is top-notch", "I love your style", "This is so original", "You're amazing at what you do", "Incredible", "I'm blown away", "You should be proud", "This is so captivating", "This is a masterpiece", "You've got a fan in me", "You're so innovative", "I'm in awe", "This is so refreshing", "Great content", "Fantastic work", "Can't wait for more", "Well executed", "Super creative", "This is so interesting", "I love your work", "You have a unique vision", "You're an inspiration", "This is truly amazing", "You're a natural", "This is so enjoyable", "Pure talent", "This is exceptional", "This is so well-crafted", "You have a great eye", "This is wonderful", "Such a great concept", "This is a work of art", "I'm a fan", "I'm addicted to your content", "You're a visionary", "This is top-quality", "You never disappoint", "You're a true talent", "This is incredibly well done", "This is so engaging", "You've outdone yourself again", "This is so well thought out", "I can't get enough of your work", "I'm amazed", "You're a true professional", "This is absolutely delightful", "This is so well presented", "You're a gem", "This is a breath of fresh air", "Keep the content coming", "You're a treasure", "I'm in love with your work", "This is extraordinary", "I can't wait to see what's next", "You're a creative force", "This is so fun to watch", "You're a master at your craft", "This is so unique", "I'm obsessed with your content", "This is so mesmerizing")
+commentVideo = ("Great video! I enjoyed watching it!", "I can't wait for your next video!", "This video made me smile!", "You're doing an amazing job with your videos!", "This video was so entertaining!", "This video was captivating!", "A fantastic video from start to finish!", "I'm a fan of your video content!", "I'm addicted to watching your videos!", "You never disappoint with your videos!", "You're a true talent in creating videos!", "This video was incredibly well done!", "I couldn't stop watching this video!", "This video is top-quality content!", "I love the style of your videos!", "You're amazing at creating video content!", "I'm in awe of your video-making skills!", "This video was fascinating and interesting!", "I love the work you put into your videos!", "You're an inspiration to aspiring video creators!", "This video is truly amazing and enjoyable!", "You have a natural talent for making videos!", "Your videos are always so engaging!", "You've outdone yourself with this video!", "I can't get enough of your video content!", "I'm amazed by the quality of this video!", "You're a true professional in video creation!", "This video is absolutely delightful to watch!", "This video is a breath of fresh air!", "Keep the amazing video content coming!", "I'm in love with your video work!", "This video is extraordinary!", "I can't wait to see what's next in your video series!", "You're a creative force in the video-making world!", "This video was so fun to watch!", "You're a master at creating videos!", "This video is unique and stands out!", "I'm obsessed with your video content!", "This video is mesmerizing and captivating!")
+emojisSpam = (" 🅿️"," 🔥"," ✅", " 🍁","  💙", " 👍", "  🥺", " 🦘", " 📍", " 🌿", " 💜", " 💚", "  🙋‍♂️", " 🚀", " 🤠", " 🌍", " 👉", " 🖤", " 🔔", " 🥀", " ⤵️", " 🔖", " ♥️" )
+alphabet = ("a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z")
 
 
 #Monitor 2556x 1440                                                              1080p BUT 150% SCALING
@@ -268,15 +265,11 @@ def liken():
         beenden()
         py.moveTo(x+100, y+100) 
         beenden()
-commentPicture = ("good work", "do another", "i gotcha :D", "nice", "pretty cool", "you deserve more likes", "creative", "do more, that's good", "ain't lyin but thats good", "like your content", ":D", "Excellent", "Love these. Well done.", "So nice", "So beautiful", "Adorable", "Beautiful", "Amazing job!", "You're so talented", "Keep up the great work", "I'm impressed", "This made my day", "You have a gift", "You're a genius", "This is so inspiring", "Absolutely stunning", "You nailed it", "You've got skills", "This is so entertaining", "Brilliant piece of work", "Wow, just wow", "This is fantastic", "Very impressive", "You have outdone yourself", "This is so creative", "Absolutely loved it", "I'm speechless", "This deserves more views", "You're a true artist", "I can't stop watching this", "This is so well done", "This is top-notch", "I love your style", "This is so original", "You're amazing at what you do", "Incredible", "I'm blown away", "You should be proud", "This is so captivating", "This is a masterpiece", "You've got a fan in me", "You're so innovative", "I'm in awe", "This is so refreshing", "Great content", "Fantastic work", "Can't wait for more", "Well executed", "Super creative", "This is so interesting", "I love your work", "You have a unique vision", "You're an inspiration", "This is truly amazing", "You're a natural", "This is so enjoyable", "Pure talent", "This is exceptional", "This is so well-crafted", "You have a great eye", "This is wonderful", "Such a great concept", "This is a work of art", "I'm a fan", "I'm addicted to your content", "You're a visionary", "This is top-quality", "You never disappoint", "You're a true talent", "This is incredibly well done", "This is so engaging", "You've outdone yourself again", "This is so well thought out", "I can't get enough of your work", "I'm amazed", "You're a true professional", "This is absolutely delightful", "This is so well presented", "You're a gem", "This is a breath of fresh air", "Keep the content coming", "You're a treasure", "I'm in love with your work", "This is extraordinary", "I can't wait to see what's next", "You're a creative force", "This is so fun to watch", "You're a master at your craft", "This is so unique", "I'm obsessed with your content", "This is so mesmerizing")
-commentVideo = ("Great video! I enjoyed watching it!", "I can't wait for your next video!", "This video made me smile!", "You're doing an amazing job with your videos!", "This video was so entertaining!", "This video was captivating!", "A fantastic video from start to finish!", "I'm a fan of your video content!", "I'm addicted to watching your videos!", "You never disappoint with your videos!", "You're a true talent in creating videos!", "This video was incredibly well done!", "I couldn't stop watching this video!", "This video is top-quality content!", "I love the style of your videos!", "You're amazing at creating video content!", "I'm in awe of your video-making skills!", "This video was fascinating and interesting!", "I love the work you put into your videos!", "You're an inspiration to aspiring video creators!", "This video is truly amazing and enjoyable!", "You have a natural talent for making videos!", "Your videos are always so engaging!", "You've outdone yourself with this video!", "I can't get enough of your video content!", "I'm amazed by the quality of this video!", "You're a true professional in video creation!", "This video is absolutely delightful to watch!", "This video is a breath of fresh air!", "Keep the amazing video content coming!", "I'm in love with your video work!", "This video is extraordinary!", "I can't wait to see what's next in your video series!", "You're a creative force in the video-making world!", "This video was so fun to watch!", "You're a master at creating videos!", "This video is unique and stands out!", "I'm obsessed with your video content!", "This video is mesmerizing and captivating!")
-emojisSpam = (" 🅿️"," 🔥"," ✅", " 🍁","  💙", " 👍", "  🥺", " 🦘", " 📍", " 🌿", " 💜", " 💚", "  🙋‍♂️", " 🚀", " 🤠", " 🌍", " 👉", " 🖤", " 🔔", " 🥀", " ⤵️", " 🔖", " ♥️" )
-alphabet = ("a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z")
 
 
 
 
-
+float_random_more_capa = random.uniform(0.57335,  2.46773) #for better safety #don't do more than 2.5 seconds
 
 
 
@@ -286,7 +279,7 @@ alphabet = ("a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n"
 while HowManyLikes >= 1 or HowManyComments >= 1:
     
 
-
+    
 
     random_accurance_emoji = random.randint(0, 1) #50% chance für ein emoji
     random_accurance_alphabet = random.randint(0, 1) #50% chance für ein alphabet
