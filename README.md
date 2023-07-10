@@ -26,9 +26,13 @@ Browser: Opera.
 Instagram accessed through Opera's sidebar.
 
 Keep all the files which you need to download in the same path/folder
+
+
+
+
+
+
 ####################
-
-
 ####################
 
 
